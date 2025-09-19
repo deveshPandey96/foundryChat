@@ -25,12 +25,16 @@ export function AgentIcon({
   iconClassName,
   alt = "",
 }: IAgentIconProps): ReactNode {
+  // Check if iconName is a URL (starts with http or https) or a local file
+  const isExternalUrl = iconName?.startsWith('http://') || iconName?.startsWith('https://');
+  const imageSrc = isExternalUrl ? iconName : `static/assets/template-images/${iconName}`;
+
   return (
     <div className={styles.iconContainer}>
       <img
         alt={alt}
         className={iconClassName ?? styles.icon}
-        src={`static/assets/template-images/${iconName}`}
+        src={imageSrc}
       />
     </div>
   );
