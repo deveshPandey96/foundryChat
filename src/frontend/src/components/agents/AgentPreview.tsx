@@ -301,32 +301,6 @@ export function AgentPreview({ agentDetails }: IAgentPreviewProps): ReactNode {
       },
     },
     {
-      key: "terms",
-      children: (
-        <a
-          className={styles.externalLink}
-          href="https://aka.ms/aistudio/terms"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Terms of Use
-        </a>
-      ),
-    },
-    {
-      key: "privacy",
-      children: (
-        <a
-          className={styles.externalLink}
-          href="https://go.microsoft.com/fwlink/?linkid=521839"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy
-        </a>
-      ),
-    },
-    {
       key: "feedback",
       children: "Send Feedback",
       onClick: () => {

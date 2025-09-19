@@ -7,11 +7,11 @@ const App: React.FC = () => {
       id: "chatbot",
       object: "chatbot",
       created_at: Date.now(),
-      name: "Chatbot",
-      description: "This is a sample chatbot.",
+      name: "ACPL Assistant",
+      description: "Your intelligent ACPL assistant ready to help you with any questions.",
       model: "default",
       metadata: {
-        logo: "Avatar_Default.svg",
+        logo: "https://www.acpl.com/website/assets/images/logo.svg",
       },
   };
 
